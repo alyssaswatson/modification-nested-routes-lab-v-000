@@ -11,6 +11,6 @@ class Song < ActiveRecord::Base
   end
 
   def new
-
+    @song = Song.new(artist_id: (params[:artist_id]))
   end
 end
